@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+
+    <package name="default" extends="struts-default">
+       
+        <action name="logout" class="com.action.login.Logout">
+         <result name="success"></result>
+        </action>
+       
+         <action name="search" class="com.action.Search">
+            <result name="success"></result>
+            <result name="error"></result>
+        </action>
+         <action name="insert" class="com.action.InsertQuestion">
+         <result name="success"></result>
+        </action>
+        
+        <action name="login" class="com.action.login.LoginAction">
+            <result name="success"></result>
+            <result name="error"></result>
+        </action>
+        
+     </package>
+</struts>
